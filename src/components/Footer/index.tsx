@@ -4,6 +4,7 @@ import { Container, Content, Copyright, Column, Image } from "./styles";
 import restaurant from "../../assets/restaurant.jpg";
 
 const Footer: FC<HTMLAttributes<HTMLElement>> = (props): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   return (
     <Container {...props}>
       <Content>
@@ -105,8 +106,8 @@ const Footer: FC<HTMLAttributes<HTMLElement>> = (props): JSX.Element => {
         </Column>
       </Content>
       <Copyright>
-        <span>Developed by Abdullah Iqbal.</span>
-        <p>© 2023 Little Lemon. All rights reserved.</p>
+        <span>Developed by Godwin.</span>
+        <p>{currentYear} Little Lemon. All rights reserved.</p>
       </Copyright>
     </Container>
   );
